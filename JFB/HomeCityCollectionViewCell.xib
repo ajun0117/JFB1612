@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCityCollectionCell" id="gTV-IL-0wX" customClass="HomeCityCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9A-yr-NSX">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="瀍河回族区" backgroundImage="city_county_normal.png">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" backgroundImage="city_county_selected.9.png">
+                            <color key="titleColor" red="0.8014373779296875" green="0.2230474054813385" blue="0.29034543037414551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="a9A-yr-NSX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7sO-Ex-iIU"/>
+                <constraint firstItem="a9A-yr-NSX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KMn-kU-Egu"/>
+                <constraint firstAttribute="trailing" secondItem="a9A-yr-NSX" secondAttribute="trailing" id="Slc-E3-OfE"/>
+                <constraint firstAttribute="bottom" secondItem="a9A-yr-NSX" secondAttribute="bottom" id="dmb-pf-xOW"/>
+            </constraints>
+            <connections>
+                <outlet property="cityBtn" destination="a9A-yr-NSX" id="Y2i-Yl-rdN"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="656"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="city_county_normal.png" width="201" height="28"/>
+        <image name="city_county_selected.9.png" width="149" height="30"/>
+    </resources>
+</document>

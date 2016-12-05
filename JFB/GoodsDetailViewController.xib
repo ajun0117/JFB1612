@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoodsDetailViewController">
+            <connections>
+                <outlet property="myTableView" destination="gps-lg-oQV" id="uW0-D0-eo8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="gps-lg-oQV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="00M-i3-7AH"/>
+                        <outlet property="delegate" destination="-1" id="vRd-sX-dIb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gps-lg-oQV" secondAttribute="trailing" id="HuU-if-UgF"/>
+                <constraint firstAttribute="bottom" secondItem="gps-lg-oQV" secondAttribute="bottom" id="Nmg-s5-Jp0"/>
+                <constraint firstItem="gps-lg-oQV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lxo-aJ-dhs"/>
+                <constraint firstItem="gps-lg-oQV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="slz-Lc-2SM"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="gps-lg-oQV"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="HuU-if-UgF"/>
+                    <exclude reference="Nmg-s5-Jp0"/>
+                    <exclude reference="lxo-aJ-dhs"/>
+                    <exclude reference="slz-Lc-2SM"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="gps-lg-oQV"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="HuU-if-UgF"/>
+                    <include reference="Nmg-s5-Jp0"/>
+                    <include reference="lxo-aJ-dhs"/>
+                    <include reference="slz-Lc-2SM"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

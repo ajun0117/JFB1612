@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllEvaluateViewController">
+            <connections>
+                <outlet property="myTableView" destination="ljP-S9-vb7" id="dai-pE-7mX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ljP-S9-vb7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yF3-9W-xQl"/>
+                        <outlet property="delegate" destination="-1" id="VyX-mg-Zug"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ljP-S9-vb7" secondAttribute="trailing" id="GlA-qf-HnA"/>
+                <constraint firstItem="ljP-S9-vb7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q1f-UX-pxH"/>
+                <constraint firstAttribute="bottom" secondItem="ljP-S9-vb7" secondAttribute="bottom" id="v8r-zv-uum"/>
+                <constraint firstItem="ljP-S9-vb7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zSd-ra-gEf"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ljP-S9-vb7"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="GlA-qf-HnA"/>
+                    <exclude reference="Q1f-UX-pxH"/>
+                    <exclude reference="v8r-zv-uum"/>
+                    <exclude reference="zSd-ra-gEf"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ljP-S9-vb7"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="GlA-qf-HnA"/>
+                    <include reference="Q1f-UX-pxH"/>
+                    <include reference="v8r-zv-uum"/>
+                    <include reference="zSd-ra-gEf"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

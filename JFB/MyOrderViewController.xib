@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrderViewController">
+            <connections>
+                <outlet property="myTableView" destination="wQR-XF-vYe" id="l5T-UV-rgN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wQR-XF-vYe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ipx-hq-cLI"/>
+                        <outlet property="delegate" destination="-1" id="Ebo-ll-svl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wQR-XF-vYe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IwL-xJ-ojM"/>
+                <constraint firstAttribute="bottom" secondItem="wQR-XF-vYe" secondAttribute="bottom" id="TnA-SK-VpJ"/>
+                <constraint firstItem="wQR-XF-vYe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="43" id="h8C-nj-aUK">
+                    <variation key="widthClass=compact" constant="44"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="wQR-XF-vYe" secondAttribute="trailing" id="ogn-dY-Nlh"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="wQR-XF-vYe"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="IwL-xJ-ojM"/>
+                    <exclude reference="TnA-SK-VpJ"/>
+                    <exclude reference="h8C-nj-aUK"/>
+                    <exclude reference="ogn-dY-Nlh"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="wQR-XF-vYe"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="IwL-xJ-ojM"/>
+                    <include reference="TnA-SK-VpJ"/>
+                    <include reference="h8C-nj-aUK"/>
+                    <include reference="ogn-dY-Nlh"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="35" y="292"/>
+        </view>
+    </objects>
+</document>

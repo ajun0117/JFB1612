@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController">
+            <connections>
+                <outlet property="_webView" destination="5yM-Sm-fx3" id="sQc-Mx-Yc8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yM-Sm-fx3">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Ckc-Df-bDp"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5yM-Sm-fx3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="C2n-qH-YCc"/>
+                <constraint firstAttribute="bottom" secondItem="5yM-Sm-fx3" secondAttribute="bottom" id="RPM-ov-fBD"/>
+                <constraint firstAttribute="trailing" secondItem="5yM-Sm-fx3" secondAttribute="trailing" id="XVd-SH-G8j"/>
+                <constraint firstItem="5yM-Sm-fx3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cnn-LD-bXA"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5yM-Sm-fx3"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="C2n-qH-YCc"/>
+                    <exclude reference="RPM-ov-fBD"/>
+                    <exclude reference="XVd-SH-G8j"/>
+                    <exclude reference="cnn-LD-bXA"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="5yM-Sm-fx3"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="C2n-qH-YCc"/>
+                    <include reference="RPM-ov-fBD"/>
+                    <include reference="XVd-SH-G8j"/>
+                    <include reference="cnn-LD-bXA"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
